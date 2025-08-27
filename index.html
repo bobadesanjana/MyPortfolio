@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sanjana | Frozen-Themed Portfolio</title>
+  <meta name="description" content="Frozen-themed portfolio with 3D assistant hover and smooth sections." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Frosted nav -->
+  <header class="site-header">
+    <nav class="nav">
+      <a class="brand" href="#home">Sanjana ❄</a>
+      <button class="nav-toggle" aria-label="Toggle Menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#certs">Certifications</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <div class="snow"></div>
+    <div class="aurora"></div>
+
+    <div class="hero-inner">
+      <div class="speech">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <p id="typewriter" aria-live="polite">Hi, I'm Sanjana—your friendly data assistant.</p>
+      </div>
+
+      <button class="assistant" id="assistant" aria-label="3D assistant">
+        <!-- Replace src below with your 3D PNG/WebP -->
+        <img src="assets/assistant.png" alt="3D assistant character" />
+      </button>
+
+      <div class="welcome">
+        <h1>Welcome to my Frozen world</h1>
+        <p>Click the assistant to know more</p>
+        <a class="cta" href="#projects">Explore Projects</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="wrap">
+    <h2>Projects</h2>
+    <div class="cards">
+      <article class="card">
+        <h3>MailMatrix</h3>
+        <p>Serverless bulk email automation (AWS Lambda, S3, SES, EventBridge, RDS).</p>
+        <ul>
+          <li>Personalized sends from CSV uploads with monitoring and alerts.</li>
+          <li>Secure IAM roles and RDS-backed persistence.</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h3>Employee TimeTracker</h3>
+        <p>Flask + AWS Cognito auth, Aurora RDS storage, CloudFront & CloudWatch integration.</p>
+        <ul>
+          <li>Secure role-based access with audit logging (CloudTrail + KMS).</li>
+          <li>Operational health dashboards using CloudWatch.</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="wrap">
+    <h2>Skills</h2>
+    <div class="pillbox" role="list">
+      <span class="pill" role="listitem">Azure Databricks</span>
+      <span class="pill" role="listitem">ADF</span>
+      <span class="pill" role="listitem">Spark / PySpark</span>
+      <span class="pill" role="listitem">Scala</span>
+      <span class="pill" role="listitem">SQL (T-SQL, MySQL, Postgres)</span>
+      <span class="pill" role="listitem">Delta Lake</span>
+      <span class="pill" role="listitem">Hadoop / Hive / Impala</span>
+      <span class="pill" role="listitem">Kafka</span>
+      <span class="pill" role="listitem">Power BI / Tableau</span>
+      <span class="pill" role="listitem">AWS (S3, Lambda, RDS)</span>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience" class="wrap">
+    <h2>Experience</h2>
+    <div class="timeline">
+      <article class="titem">
+        <h3>Deloitte — Consultant Data Engineer and Analyst</h3>
+        <small>Oct 2023 – Apr 2024</small>
+        <ul>
+          <li>Built & managed cloud-native ETL (ADF + Databricks) for 50M+ banking records.</li>
+          <li>Modelled high-volume data in HBase; improved quality via testing & RCA.</li>
+        </ul>
+      </article>
+      <article class="titem">
+        <h3>Cognizant — Associate Data Engineer (Molina Healthcare)</h3>
+        <small>Jun 2021 – Oct 2023</small>
+        <ul>
+          <li>Processed 500M+ healthcare records; curated enrollment for 5M+ members.</li>
+          <li>25% runtime reduction with Spark optimizations; led cloud migration to Azure.</li>
+          <li>Automated L3 vendor extracts and anomaly alerts; created Power BI dashboards.</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <!-- Certifications -->
+  <section id="certs" class="wrap">
+    <h2>Certifications</h2>
+    <ul class="plain">
+      <li>Microsoft Certified: Azure Data Engineer Associate (DP-203)</li>
+      <li>Microsoft Certified: Azure Fundamentals (AZ-900)</li>
+      <li>Microsoft Certified: Azure Data Fundamentals (DP-900)</li>
+    </ul>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="wrap contact">
+    <h2>Contact</h2>
+    <p>
+      <a href="mailto:sanjanabobade1298@gmail.com">sanjanabobade1298@gmail.com</a> ·
+      <a href="https://www.linkedin.com/in/sanjanabobade/" target="_blank" rel="noopener">LinkedIn</a> ·
+      <a href="https://github.com/bobadesanjana" target="_blank" rel="noopener">GitHub</a>
+    </p>
+  </section>
+
+  <footer class="site-footer">
+    <small>© <span id="year"></span> Sanjana. Built with ♡ and a touch of ice.</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
