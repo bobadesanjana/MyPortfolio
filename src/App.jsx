@@ -1,4 +1,6 @@
 import { useEffect, useState, useMemo } from "react";
+const asset = (path) => `${import.meta.env.BASE_URL}${path}`;
+
 
 const SECTIONS = [
   { id: "home", label: "Home" },
@@ -476,7 +478,7 @@ export default function App() {
                   download="Sanjana_Bobade_Resume.pdf"
                 >
                   <img
-                    src="/icons/download.svg"
+                    src={asset("/icons/download.svg")}
                     alt=""
                     className="resume-icon"
                   />
@@ -493,7 +495,7 @@ export default function App() {
                   className="social-icon"
                   aria-label="GitHub"
                 >
-                  <img src="/icons/github.svg" alt="GitHub" />
+                  <img src={asset("/icons/github.svg")} alt="GitHub" />
                 </a>
                 <a
                   href="https://www.linkedin.com/in/sanjanabobade/"
@@ -502,28 +504,28 @@ export default function App() {
                   className="social-icon"
                   aria-label="LinkedIn"
                 >
-                  <img src="/icons/linkedIn.svg" alt="LinkedIn" />
+                  <img src={asset("/icons/linkedIn.svg" alt="LinkedIn")} />
                 </a>
                 <a
                   href="mailto:sanjanabobade1298@gmail.com"
                   className="social-icon"
                   aria-label="Email"
                 >
-                  <img src="/icons/gmail.svg" alt="Email" />
+                  <img src={asset("/icons/gmail.svg")} alt="Email" />
                 </a>
                 <a
                   href="tel:+18169792509"
                   className="social-icon"
                   aria-label="Call"
                 >
-                  <img src="/icons/phone.png" alt="Phone" />
+                  <img src={asset("/icons/phone.png")} alt="Phone" />
                 </a>
               </div>
             </div>
 
             <div className="hero-photo-wrap">
               <img
-                src="/sanjana.png"
+                src={asset("/sanjana.png")}
                 alt="Sanjana Bobade"
                 className="hero-photo"
               />
@@ -566,7 +568,7 @@ export default function App() {
                 >
                   <span className="skill-pill-icon">
                     <img
-                      src={`/skills/${skill.icon}`}
+                      src={asset(`skills/${skill.icon}`)}
                       alt={skill.name}
                       loading="lazy"
                     />
@@ -624,7 +626,7 @@ export default function App() {
             window.open(p.github, "_blank", "noreferrer");
           }}
         >
-          <img src="/icons/github.svg" alt="" />
+          <img src={asset("/icons/github.svg")} alt="" />
         </button>
       </article>
     ))}
@@ -662,7 +664,7 @@ export default function App() {
                   <div className="exp-card-header">
                     {exp.logo && (
                       <div className="exp-logo">
-                        <img src={`/logos/${exp.logo}`} alt={exp.company} />
+                        <img src={asset(`logos/${exp.logo}`)} alt={exp.company} />
                       </div>
                     )}
 
@@ -797,7 +799,7 @@ export default function App() {
         rel="noreferrer"
         className="project-modal-gitlink"
       >
-        <img src="/icons/github.svg" alt="" />
+        <img src={asset("/icons/github.svg")} alt="" />
         <span>View code on GitHub</span>
       </a>
     </div>
