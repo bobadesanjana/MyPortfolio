@@ -1,5 +1,7 @@
 import { useEffect, useState, useMemo } from "react";
-const asset = (path) => `${import.meta.env.BASE_URL}${path}`;
+const asset = (path) =>
+  `${import.meta.env.BASE_URL}${path.replace(/^\/+/, "")}`;
+
 
 
 const SECTIONS = [
@@ -474,11 +476,11 @@ export default function App() {
                 {/* Resume button with icon & hover lift */}
                 <a
                   className="secondary-btn"
-                  href="/Sanjana_Bobade_Resume.pdf"
+                  href={asset("Sanjana_Bobade_Resume.pdf")}
                   download="Sanjana_Bobade_Resume.pdf"
                 >
                   <img
-                    src={asset("/icons/download.svg")}
+                    src={asset("icons/download.svg")}
                     alt=""
                     className="resume-icon"
                   />
@@ -495,7 +497,7 @@ export default function App() {
                   className="social-icon"
                   aria-label="GitHub"
                 >
-                  <img src={asset("/icons/github.svg")} alt="GitHub" />
+                  <img src={asset("icons/github.svg")} alt="GitHub" />
                 </a>
                 <a
                   href="https://www.linkedin.com/in/sanjanabobade/"
@@ -504,28 +506,28 @@ export default function App() {
                   className="social-icon"
                   aria-label="LinkedIn"
                 >
-                  <img src={asset("/icons/linkedIn.svg" alt="LinkedIn")} />
+                  <img src={asset("icons/linkedIn.svg")} alt="LinkedIn" />
                 </a>
                 <a
                   href="mailto:sanjanabobade1298@gmail.com"
                   className="social-icon"
                   aria-label="Email"
                 >
-                  <img src={asset("/icons/gmail.svg")} alt="Email" />
+                  <img src={asset("icons/gmail.svg")} alt="Email" />
                 </a>
                 <a
                   href="tel:+18169792509"
                   className="social-icon"
                   aria-label="Call"
                 >
-                  <img src={asset("/icons/phone.png")} alt="Phone" />
+                  <img src={asset("icons/phone.png")} alt="Phone" />
                 </a>
               </div>
             </div>
 
             <div className="hero-photo-wrap">
               <img
-                src={asset("/sanjana.png")}
+                src={asset("sanjana.png")}
                 alt="Sanjana Bobade"
                 className="hero-photo"
               />
@@ -626,7 +628,7 @@ export default function App() {
             window.open(p.github, "_blank", "noreferrer");
           }}
         >
-          <img src={asset("/icons/github.svg")} alt="" />
+          <img src={asset("icons/github.svg")} alt="" />
         </button>
       </article>
     ))}
@@ -799,7 +801,7 @@ export default function App() {
         rel="noreferrer"
         className="project-modal-gitlink"
       >
-        <img src={asset("/icons/github.svg")} alt="" />
+        <img src={asset("icons/github.svg")} alt="" />
         <span>View code on GitHub</span>
       </a>
     </div>
