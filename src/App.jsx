@@ -70,7 +70,7 @@ const EXPERIENCES = [
     location: "Austin, TX",
     type: "Fulltime",
     dates: "Sep 2025 – Present",
-    logo: asset("cdf.jpeg"), // put this in /public/logos/
+    logo: "cdf.jpeg", // put this in /public/logos/
     bullets: [
       "Engineered end to end ETL and ELT pipelines to ingest, clean, and process hospital data (ICU beds, admissions, emergency elective splits), scaling to 100k+ daily records across multiple hospitals.",
       "Created a unified hospital metrics dataset by integrating ICU, admissions, and calendar data, improved feature completeness and data consistency by 40% and troubleshooted upstream and downstream impacts.",
@@ -93,7 +93,7 @@ const EXPERIENCES = [
     location: "Remote",
     type: "Fulltime",
     dates: "Oct 2023 – Apr 2024",
-    logo: asset("deloitte.jpg"),
+    logo: "deloitte.jpg",
     bullets: [
       "Built and maintained ETL and ELT pipelines on ADF, Databricks, SQL, Scala, and PySpark to process 50M+ records for banking analytics.",
       "Optimized queries and partitioning to improve performance by ~20%.",
@@ -108,7 +108,7 @@ const EXPERIENCES = [
     location: "Remote",
     type: "Fulltime",
     dates: "Jun 2021 – Oct 2023",
-    logo: asset("cognizant.svg"),
+    logo: "cognizant.svg",
     bullets: [
       "Engineered large scale healthcare pipelines on Azure Databricks and Spark for 5M+ members and 500M+ records with HIPAA compliance.",
       "Migrated ELT from on prem Cloudera to Azure (Databricks, Synapse, ADLS, ADF, Unity Catalog) with ~45% runtime reduction.",
@@ -131,7 +131,7 @@ const EXPERIENCES = [
     location: "Remote",
     type: "Internship",
     dates: "Jan 2021 – Jun 2021",
-    logo: asset("cognizant.svg"),
+    logo: "cognizant.svg",
     bullets: [
       "Worked with ADF, Synapse, Blob Storage, SQL Server, and SSIS/SSRS to support reporting and analytics.",
       "Built SSIS ETL pipelines and reports used by business stakeholders.",
